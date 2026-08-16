@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: nice_nano
+  - board: nrfmicro_11
     shield: splitkb_aurora_sweep_left
-  - board: nice_nano
+  - board: nrfmicro_11
     shield: splitkb_aurora_sweep_right
