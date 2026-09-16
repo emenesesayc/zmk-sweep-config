@@ -69,12 +69,12 @@
             >;
         };
 
-        right_layer {
+        number_layer {
             display-name = "Numbers";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │          │          │          │          │   │    ^     │    7     │    8     │    9     │    *     │
-            &kp INS    &kp HOME   &kp UP     &kp END   &kp PG_UP       &kp CARET   &kp N7    &kp N8      &kp N9    &kp MULTIPLY
+            &kp INS    &kp HOME   &kp UP     &kp END   &kp PG_UP       &kp CARET   &kp N7    &kp N8      &kp N9    &kp STAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │          │          │          │          │   │    -     │    4     │    5     │    6     │    +     │
             &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_UP      &kp MINUS   &kp N4     &kp N5     &kp N6    &kp PLUS
@@ -87,7 +87,7 @@
             >;
         };
 
-        left_layer {
+        symbol_layer {
             display-name = "Symbols";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
