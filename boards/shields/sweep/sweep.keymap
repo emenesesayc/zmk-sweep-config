@@ -11,22 +11,22 @@
 
 / {
     combos {
-        compatible = "zmk,combos"
+        compatible = "zmk,combos";
         combo_lbkt {
             timeout-ms = <50>;
-            key-positions = <0 1>
-            bindings = <&kp LBKT>
-        }
+            key-positions = <0 1>;
+            bindings = <&kp LBKT>;
+        };
         combo_lbrc {
             timeout-ms = <50>;
-            key-positions = <1 2>
-            bindings = <&kp LBRC>
-        }
+            key-positions = <1 2>;
+            bindings = <&kp LBRC>;
+        };
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <2 3>
-            bindings = <&kp LPAR>
-        }
+            key-positions = <2 3>;
+            bindings = <&kp LPAR>;
+        };
     };
 
     behaviors {
