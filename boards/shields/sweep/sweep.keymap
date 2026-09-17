@@ -13,69 +13,71 @@
     combos {
         compatible = "zmk,combos";
         combo_lbkt {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
             key-positions = <0 1>;
             bindings = <&kp LBKT>;
         };
         combo_lbrc {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
             key-positions = <1 2>;
             bindings = <&kp LBRC>;
         };
         combo_lpar {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
             key-positions = <2 3>;
             bindings = <&kp LPAR>;
         };
         combo_rbkt {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
             bindings = <&kp RBKT>;
         };
         combo_rbrc {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <19 20>;
+            key-positions = <7 8>;
             bindings = <&kp RBRC>;
         };
         combo_rpar {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <18 19>;
+            key-positions = <6 7>;
             bindings = <&kp RPAR>;
         };
         combo_enter {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <28 29>;
+            key-positions = <26 27>;
             bindings = <&kp ENTER>;
         };
         combo_esc {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <13 14>;
+            key-positions = <22 23>;
             bindings = <&kp ESC>;
         };
         combo_caps_word {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <6 26>;
+            key-positions = <10 19>;
+	    layer = <0>;
             bindings = <&caps_word>;
         };
         combo_repeat {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <27 28>;
+            key-positions = <25 26>;
+	    layer = <0>;
             bindings = <&key_repeat>;
         };
         combo_game {
-            timeout-ms = <30>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <200>;
-            key-positions = <0 6 10>;
+            key-positions = <0 10 20>;
 	    layers = <0>;
             bindings = <&to 5>;
         };
@@ -150,7 +152,7 @@
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp UNDER  &kp AMPS &kp EQUAL  &kp GRAVE   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │ |        │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans       &trans    &trans   &kp PIPE
+            &trans     &trans     &trans     &trans     &trans         &trans     &kp APOS   &kp DQT    &trans   &kp PIPE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -194,7 +196,7 @@
         };
 
         game_layer {
-            display-name = "Default Layer";
+            display-name = "Game Layer";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  Q       │  W       │  E       │  R       │   │  T       │  U       │  I       │  O       │  P       │
