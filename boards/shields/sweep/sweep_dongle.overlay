@@ -4,6 +4,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+	zmk,physical-layout = &cuddlykeyboards_ferris_layout;
     };
 
     mock_kscan: kscan_1 {
@@ -12,4 +13,5 @@
         rows = <0>;
         events = <0>;
     };
+
 };
